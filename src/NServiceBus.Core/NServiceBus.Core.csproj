@@ -213,6 +213,8 @@
     <Compile Include="Routing\StorageDrivenPublishing\SubscribersForEvent.cs" />
     <Compile Include="Routing\RoutingAdapter.cs" />
     <Compile Include="Routing\RoutingContextExtensions.cs" />
+    <Compile Include="Routing\SubscribeContext.cs" />
+    <Compile Include="Routing\UnsubscribeContext.cs" />
     <Compile Include="Sagas\AutoCorrelationFeature.cs" />
     <Compile Include="Sagas\PopulateAutoCorrelationHeadersForRepliesBehavior.cs" />
     <Compile Include="Satellites\IAdvancedSatellite.cs" />
@@ -405,6 +407,7 @@
     <Compile Include="MessageDeserializationException.cs" />
     <Compile Include="Hosting\AuditHostInformationBehavior.cs" />
     <Compile Include="Unicast\IContextualBus.cs" />
+    <Compile Include="Unicast\IRealBus.cs" />
     <Compile Include="Unicast\Transport\PipelineInfo.cs" />
     <Compile Include="Utils\BaseDictionary.cs" />
     <Compile Include="Utils\PathUtilities.cs" />

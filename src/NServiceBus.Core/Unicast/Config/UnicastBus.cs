@@ -14,7 +14,6 @@ namespace NServiceBus.Features
     using NServiceBus.Transports;
     using NServiceBus.Unicast;
     using NServiceBus.Unicast.Messages;
-    using NServiceBus.Unicast.Routing;
     using TransactionSettings = NServiceBus.Unicast.Transport.TransactionSettings;
 
     class UnicastBus : Feature
@@ -102,12 +101,8 @@ namespace NServiceBus.Features
                 builder.Build<CriticalError>(),
                 builder.Build<IMessageMapper>(),
                 builder,
-                builder.Build<Configure>(),
-                builder.Build<IManageSubscriptions>(),
                 builder.Build<ReadOnlySettings>(),
-                builder.Build<TransportDefinition>(),
-                builder.Build<IDispatchMessages>(),
-                builder.Build<StaticMessageRouter>());
+                builder.Build<IDispatchMessages>());
 
             return bus;
         }
